@@ -1,0 +1,61 @@
+/* body{
+    background-image: url('./Assets/one.jpeg');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover ;
+}
+
+*/
+.center{
+    margin-left: 46%;;
+}
+
+@media screen and (max-width: 550px) {
+.shrink{
+    font-size: 4rem;
+}
+.shrink2{
+    font-size: 1.5rem;
+}
+.shrink3{
+    font-size: 2.5rem;
+}
+
+.center{
+    margin-left: 32%;
+}
+} 
+
+.head{
+    
+     font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+.heading {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+.rem6{
+    font-size: 5rem;
+}  
+
+a{
+    color: white;
+    font-size: 3rem;
+}
+
+a:hover{
+    transform: scale(1.5);
+    transition: .5s ease-in-out;
+}
+
+.bar{
+    width: 50%;
+    height: 30px;
+    background-color: wheat;
+    border-radius: 15px;
+}
