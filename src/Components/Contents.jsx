@@ -18,11 +18,17 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 // import skill from './Assets/skill.jpg'
 import Progress from './Progress';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 
 
 
 export default function Contents() {
 
+  React.useEffect(() => {
+    AOS.init();
+  },[])
 
   return (
 
@@ -64,7 +70,7 @@ export default function Contents() {
           <h1  
           data-aos="zoom-in-up" data-aos-duration="1000"
           data-aos-easing="ease-in-out"
-          className='text-white text-7xl font-bold pt-6  text-left mx-9 shrink'>Skills :</h1>
+          className='text-white text-7xl font-bold pt-6  text-left mx-9 shrink skill'>Skills :</h1>
 
           <div data-aos="zoom-in-up" data-aos-duration="1000"
            data-aos-easing="ease-in-out"className='flex flex-col'>
@@ -128,7 +134,7 @@ export default function Contents() {
 
         <div>
 
-        <h1 className='text-white text-7xl font-bold my-6 text-left mx-9 heading shrink3 mt-32'>Contect :</h1>
+        <h1 className='text-white text-7xl font-bold my-6 text-left mx-9 heading shrink3 mt-32'>Connect :</h1>
 
         <div
               className='flex justify-evenly my-16'>

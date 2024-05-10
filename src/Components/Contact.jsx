@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Contact.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
@@ -29,15 +32,18 @@ function ContactForm() {
       message: ''
     });
   };
+        React.useEffect(() => {
+          AOS.init();
+        },[])
 
   return (
-    <div data-aos="flip-up" data-aos-duration="2000" className="container mx-auto py-8">
+    <div data-aos="flip-up" data-aos-duration="2000" className="container mx-auto py-8 skill form">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-yellow-200 text-sm font-bold mb-2" htmlFor="name">Name</label>
           <input
-            className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none
-             glass focus:shadow-outline"
+            className="shadow appearance-none border rounded py-2 px-3 text-white leading-tight focus:outline-none
+             glass focus:shadow-outline "
             id="name"
             type="text"
             placeholder="Your Name"
@@ -49,7 +55,7 @@ function ContactForm() {
         <div className="mb-4">
           <label className="block text-yellow-200 text-sm font-bold mb-2" htmlFor="email">Email</label>
           <input
-            className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline
+            className="shadow appearance-none border rounded py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline
             glass "
             id="email"
             type="email"
@@ -62,7 +68,7 @@ function ContactForm() {
         <div className="mb-4">
           <label className="block text-yellow-200 text-sm font-bold mb-2" htmlFor="phone">Phone Number</label>
           <input
-            className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline 
+            className="shadow appearance-none border rounded py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline 
             glass"
             id="phone"
             type="tel"
@@ -75,7 +81,7 @@ function ContactForm() {
         <div className="mb-4">
           <label className="block text-yellow-200 text-sm font-bold mb-2" htmlFor="message">Message</label>
           <textarea
-            className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline
+            className="shadow appearance-none border rounded py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline
              glass"
             id="message"
             placeholder="Your Message"
