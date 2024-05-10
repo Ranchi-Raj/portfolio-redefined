@@ -16,7 +16,8 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
-import skill from './Assets/skill.jpg'
+// import skill from './Assets/skill.jpg'
+import Progress from './Progress';
 
 
 
@@ -56,7 +57,7 @@ export default function Contents() {
       </div>
       <div 
 
-      style={{backgroundImage: `url(${skill})`,height: '130vh'}} 
+      // style={{backgroundImage: `url(${skill})`,height: '130vh'}} 
       
       className= 'bg-cover bg-center animate-fade-up animate-once animate-duration-[700ms] animate-ease-in animate-delay-1000 animate-fill-forwards'>
           <h1 className='text-white text-7xl font-bold pt-6  text-left mx-9 shrink'>Skills :</h1>
@@ -64,47 +65,46 @@ export default function Contents() {
           <div className='flex flex-col'>
             
             <div className='flex justify-around mt-32 mb-4'>
-              <h1 className='text-white text-6xl font-bold mr-16'><FaJava /></h1>
-              <div className=' bar'></div>
+              <h1 className='text-white text-6xl font-bold mr-16 sym'><FaJava /></h1>
+             <Progress
+             percent={80}/>
             </div>  
 
             <div className='flex justify-around my-5'> 
-              <h1 className='text-white text-6xl font-bold mr-16'><FaPython /></h1>
-              <div className=' bar'></div>
+              <h1 className='text-white text-6xl font-bold mr-16 sym'><FaPython /></h1>
+               <Progress
+             percent={68}/>
             </div>
 
             <div className='flex justify-around my-5'> 
-              <h1 className='text-white text-6xl font-bold mr-16'><FaHtml5/></h1>
-              <div className=' bar'></div>
+              <h1 className='text-white text-6xl font-bold mr-16 sym'><FaHtml5/></h1>
+               <Progress
+             percent={90}/>
             </div>
 
             <div className='flex justify-around my-5'> 
-              <h1 className='text-white text-6xl font-bold mr-16'><IoLogoCss3 /></h1>
-              <div className=' bar'></div>
+              <h1 className='text-white text-6xl font-bold mr-16 sym'><IoLogoCss3 /></h1>
+               <Progress
+             percent={85}/>
             </div>
 
             <div className='flex justify-around my-5'> 
-              <h1 className='text-white text-6xl font-bold mr-16'><IoLogoJavascript /></h1>
-              <div className=' bar'></div>
+              <h1 className='text-white text-6xl font-bold mr-16 sym'><IoLogoJavascript /></h1>
+               <Progress
+             percent={60}/>
             </div>
 
             <div className='flex justify-around my-5'> 
-              <h1 className='text-white text-6xl font-bold mr-16'><SiNumpy /></h1>
-              <div className=' bar'></div>
+              <h1 className='text-white text-6xl font-bold mr-16 sym'><SiNumpy /></h1>
+               <Progress
+             percent={70}/>
             </div>
 
             <div className='flex justify-around my-2'> 
-              <h1 className='text-white text-6xl font-bold mr-16'><SiPandas /></h1>
-              <div className=' bar'></div>
+              <h1 className='text-white text-6xl font-bold mr-16 sym'><SiPandas /></h1>
+               <Progress
+             percent={60}/>
             </div>
-
-            {/* <div className='flex justify-around my-5'> 
-              <h1 className='text-white text-6xl font-bold mr-16'><SiPandas /></h1>
-            </div> */}
-
-            {/* <div className='flex justify-around my-5'> 
-              <h1 className='text-white text-6xl font-bold mr-16'><SiPandas /></h1>
-            </div> */}
 
           </div>
               {/* Contact Me */}

@@ -11,21 +11,6 @@
     margin-left: 46%;;
 }
 
-@media screen and (max-width: 550px) {
-.shrink{
-    font-size: 4rem;
-}
-.shrink2{
-    font-size: 1.5rem;
-}
-.shrink3{
-    font-size: 2.5rem;
-}
-
-.center{
-    margin-left: 32%;
-}
-} 
 
 .head{
     
@@ -55,7 +40,68 @@ a:hover{
 
 .bar{
     width: 50%;
-    height: 30px;
+    height: 20px;
     background-color: wheat;
     border-radius: 15px;
 }
+/* .bar2{
+    width: 50%;
+    height: 20px;
+    background-color: wheat;
+    border-radius: 15px;
+} */
+
+.circle{
+    border-radius: 50%;
+    background-color: rgb(110, 183, 201);
+    font-size: 1rem;
+    padding-top: 3px;
+    padding-left : 6px;padding-right: 6px;
+    /* padding-bottom: 20px; */
+    position: relative;
+    bottom: 5px;
+    right: 20px;
+    width: 40px;
+    height: 33px;
+    font-weight: 600;
+    border: 3px solid red;
+}
+
+@media screen and (max-width: 550px) {
+.shrink{
+    font-size: 4rem;
+}
+.shrink2{
+    font-size: 1.5rem;
+}
+.shrink3{
+    font-size: 2.5rem;
+}
+
+.center{
+    margin-left: 32%;
+}
+
+.sym{
+    font-size: 2rem;
+}
+
+.bar{
+    width: 60%;
+    height: 10px;
+}
+
+.bar2{
+    height: 10px;
+}
+
+.circle{
+    width: 30px;
+    height: 25px;
+    font-size: 0.75rem;
+    border: 1px solid red;
+}
+.sym{
+    margin-left: 15px;
+}
+} 

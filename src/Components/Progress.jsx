@@ -1,34 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
+import './Contents.css'
 
-function ProgressBar({ percent }) {
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (progress < percent) {
-        setProgress(progress + 1);
-      }
-    }, 20);
-
-    return () => clearInterval(interval);
-  }, [percent, progress]);
-
+export default function Progress({percent}) {
   return (
-    <div className="progress-bar">
-      <div className="progress" style={{ width: `${progress}%`, height: '100px', color: 'red'}}>
-        <span className="progress-label">{progress}%</span>
-      </div>
-    </div>
-  );
+       <div className=' bar flex'>
+          <div className='bar2' style={{width: `${percent}%`, backgroundColor: 'red',
+              borderRadius: '10px'}}> </div>
+          <div className='circle animate-bounce'>{percent}%</div>
+       </div>
+  )
 }
 
-function Progess({value}) {
-  return (
-    <div className="app">
-      <h1>Animated Progress Bar</h1>
-      <ProgressBar percent={value} />
-    </div>
-  );
-}
-
-export default Progess;
