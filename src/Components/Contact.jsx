@@ -31,7 +31,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="container mx-auto py-8">
+    <div data-aos="flip-up" data-aos-duration="2000" className="container mx-auto py-8">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-yellow-200 text-sm font-bold mb-2" htmlFor="name">Name</label>

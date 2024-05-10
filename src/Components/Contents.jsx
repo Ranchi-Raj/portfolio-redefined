@@ -55,14 +55,19 @@ export default function Contents() {
       
     > Web Developer, Data Science Enthusiast, Competitive Programmer </motion.div>
       </div>
-      <div 
+      <div data-aos="zoom-in-up" data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
 
       // style={{backgroundImage: `url(${skill})`,height: '130vh'}} 
       
       className= 'bg-cover bg-center animate-fade-up animate-once animate-duration-[700ms] animate-ease-in animate-delay-1000 animate-fill-forwards'>
-          <h1 className='text-white text-7xl font-bold pt-6  text-left mx-9 shrink'>Skills :</h1>
+          <h1  
+          data-aos="zoom-in-up" data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className='text-white text-7xl font-bold pt-6  text-left mx-9 shrink'>Skills :</h1>
 
-          <div className='flex flex-col'>
+          <div data-aos="zoom-in-up" data-aos-duration="1000"
+           data-aos-easing="ease-in-out"className='flex flex-col'>
             
             <div className='flex justify-around mt-32 mb-4'>
               <h1 className='text-white text-6xl font-bold mr-16 sym'><FaJava /></h1>
@@ -112,16 +117,21 @@ export default function Contents() {
        </div>
        <div>
 
-        <h1 className='text-white text-7xl font-bold my-6 text-left mx-9 heading shrink3 mt-32'>Contact Me :</h1>
+        <h1 
+          data-aos="flip-up"
+        className='text-white text-7xl font-bold my-6 text-left mx-9 heading shrink3 mt-32'>Contact Me :</h1>
 
-        <ContactForm/>
+        <ContactForm 
+  
+        />
         </div>
 
         <div>
 
         <h1 className='text-white text-7xl font-bold my-6 text-left mx-9 heading shrink3 mt-32'>Contect :</h1>
 
-        <div className='flex justify-evenly my-16'>
+        <div
+              className='flex justify-evenly my-16'>
           <a href='https://www.instagram.com/'><CiInstagram/></a>
           <a href='https://www.instagram.com/'><FaGithub/> </a>
           <a href='https://www.instagram.com/'> <FaTelegramPlane/> </a>

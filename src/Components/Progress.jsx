@@ -4,7 +4,7 @@ import './Contents.css'
 export default function Progress({percent}) {
   return (
        <div className=' bar flex'>
-          <div className='bar2' style={{width: `${percent}%`, backgroundColor: 'red',
+          <div className='bar2' style={{width: `${percent}%`, backgroundColor: 'green',
               borderRadius: '10px'}}> </div>
           <div className='circle animate-bounce'>{percent}%</div>
        </div>

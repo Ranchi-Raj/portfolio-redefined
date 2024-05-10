@@ -64,7 +64,7 @@ a:hover{
     width: 40px;
     height: 33px;
     font-weight: 600;
-    border: 3px solid red;
+    border: 3px solid green;
 }
 
 @media screen and (max-width: 550px) {
@@ -99,7 +99,7 @@ a:hover{
     width: 30px;
     height: 25px;
     font-size: 0.75rem;
-    border: 1px solid red;
+    border: 1px solid rgb(29, 178, 29);
 }
 .sym{
     margin-left: 15px;
